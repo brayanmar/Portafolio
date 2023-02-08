@@ -1,0 +1,8 @@
+<div class="container">   
+   <!--<mat-icon class="icon" >view_list</mat-icon> -->
+<div *ngFor="let link of navegador | rray " class="icon">
+   
+<a href="#{{link.id}}" class="name">  {{link.name}}</a>
+</div>
+
+</div>
