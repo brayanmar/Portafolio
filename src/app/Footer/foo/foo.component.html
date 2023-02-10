@@ -5,20 +5,20 @@
       *ngFor="let elements of element.contacto | rray"
       class="container_foo_1"
     >
-      <p>Teléfono</p>
-      <p>{{ elements.numero }}</p>
-      <p>Deja tu mensaje.</p>
-      <p>{{ elements.correo }}</p>
+      <p class="titulo_1">Teléfono</p>
+      <p class="titulo_2">{{ elements.numero }}</p>
+      <p class="titulo_1">Deja tu mensaje.</p>
+      <p class="titulo_2">{{ elements.correo }}</p>
       <div class="ico">
-        <p>Linkedin</p>
+        <p class="titulo_1">Linkedin</p>
         <a mat-raised-button href="{{ elements.linke }}">
           <img src="../../../assets/linke.png" class="img_1" />
         </a>
-        <p>Git Hub</p>
+        <p class="titulo_1">Git Hub</p>
         <a mat-raised-button href="{{ elements.Git }}"
           ><img src="../../../assets/github-removebg-preview.png" class="img_1"
         /></a>
-        <p>Canlendly</p>
+        <p class="titulo_1">Canlendly</p>
         <a mat-raised-button href="{{ elements.calen }}"
           ><img src="../../../assets/plazo.png" class="img_1"
         /></a>
@@ -40,7 +40,7 @@
         placeholder="Descripcion..."
         class="input_name"
       ></textarea>
-      <button>Enviar</button>
+      <button class="button_6">Enviar</button>
     </form>
   </div>
 </div>
