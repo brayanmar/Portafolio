@@ -534,3 +534,258 @@
     height: 95vh;
   }
 }
+
+/* 
+  ##Dispositivo = Tablets de baja resolucion y telefnos Mobiles (horizontal)
+  ##Resolucion = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .main {
+    height: calc(785vh - 60px);
+  }
+  .titulo_1 {
+    font-size: 2rem;
+    height: 5rem;
+  }
+  .titulo_2 {
+    font-size: 2rem;
+  }
+  .titulo_1_1 {
+    font-size: 1.8rem;
+    height: 8rem;
+    line-height: 115%;
+  }
+  .container_fortalezas {
+    height: 220vh;
+  }
+  .forta {
+    margin-top: 4%;
+  }
+  .cajon_1 {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 19rem;
+  }
+  .cajon_1_1 {
+    width: 49%;
+    margin-right: 0%;
+    margin-bottom: 13%;
+  }
+  .antetitulo_quien {
+    height: 4rem;
+  }
+
+  .caja_2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    height: 27rem;
+    margin-top: 1%;
+    justify-content: flex-start;
+    margin-bottom: 4%;
+  }
+  .caja_2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    height: 27rem;
+    margin-top: 6%;
+    justify-content: flex-start;
+    margin-bottom: 4%;
+  }
+  .caja_2_1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -21%;
+  }
+  .titulo_3 {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .img_1 {
+    height: 4rem;
+  }
+  .container_quien_soy {
+    height: 200vh;
+  }
+  .antetitulo_quien {
+    font-size: 1.3rem;
+    height: 6rem;
+  }
+  .titulo_quien {
+    font-size: 2rem;
+  }
+  .bio {
+    margin-top: 7%;
+    font-size: 1.2rem;
+    line-height: 140%;
+  }
+  .container_2 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 21rem;
+  }
+  .container_3 {
+    height: 18rem;
+    margin-bottom: 7%;
+    width: 80%;
+  }
+  .container_educacion {
+    height: 130vh;
+  }
+  .instituto {
+    font-size: 1.5rem;
+    display: flex;
+  }
+  .titulo_proye {
+    font-size: 2rem;
+  }
+  .container_4 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 10rem;
+  }
+  .container_4_1 {
+    margin-bottom: 8%;
+  }
+  .container_proyecto {
+    height: 145vh;
+  }
+}
+/* 
+  ##Dispositivo = Mayoria de telefonos moviles (vertical)
+  ##Resolucion = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  //CSS
+  .main {
+    height: calc(950vh - 60px);
+  }
+  .container_portada {
+    height: 190vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .imagen {
+    height: 30rem;
+  }
+  .titulo_1 {
+    font-size: 2rem;
+    height: 5rem;
+  }
+  .titulo_2 {
+    font-size: 2rem;
+  }
+  .titulo_1_1 {
+    font-size: 1.8rem;
+    height: 8rem;
+    line-height: 115%;
+  }
+  .container_fortalezas {
+    height: 295vh;
+  }
+  .forta {
+    margin-top: 4%;
+    font-size: 1.5rem;
+  }
+  .cajon_1 {
+    display: contents;
+    height: 19rem;
+  }
+  .cajon_1_1 {
+    width: 80%;
+    margin-right: 0%;
+    margin-bottom: 13%;
+  }
+  .antetitulo_quien {
+    height: 3rem;
+  }
+
+  .caja_2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    height: 27rem;
+    margin-top: 1%;
+    justify-content: flex-start;
+    margin-bottom: 4%;
+  }
+  .caja_2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    height: 27rem;
+    margin-top: 6%;
+    justify-content: flex-start;
+    margin-bottom: 4%;
+  }
+  .caja_2_1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -21%;
+  }
+  .titulo_3 {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .img_1 {
+    height: 4rem;
+  }
+  .container_quien_soy {
+    height: 200vh;
+  }
+  .antetitulo_quien {
+    font-size: 1.3rem;
+    height: 3rem;
+  }
+  .titulo_quien {
+    font-size: 2rem;
+  }
+  .bio {
+    margin-bottom: 15%;
+    margin-top: 25%;
+    font-size: 1.2rem;
+    line-height: 120%;
+  }
+  .container_2 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 21rem;
+  }
+  .container_3 {
+    height: 18rem;
+    margin-bottom: 7%;
+    width: 80%;
+  }
+  .container_educacion {
+    height: 130vh;
+  }
+  .instituto {
+    font-size: 1.2rem;
+    display: flex;
+  }
+  .titulo_proye {
+    font-size: 2rem;
+  }
+  .container_4 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 10rem;
+  }
+  .container_4_1 {
+    margin-bottom: 8%;
+  }
+  .container_proyecto {
+    height: 145vh;
+  }
+  .titulo_educa {
+    font-size: 1.5rem;
+  }
+  .profesion {
+    font-size: 1.1rem;
+  }
+}

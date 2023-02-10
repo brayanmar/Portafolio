@@ -32,3 +32,19 @@
     justify-content: center;
   }
 }
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    justify-content: center;
+  }
+  .name {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    justify-content: center;
+  }
+  .name {
+    font-size: 1rem;
+  }
+}
