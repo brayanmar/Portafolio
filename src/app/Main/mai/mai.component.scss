@@ -1,11 +1,11 @@
 .main {
   background: white;
   width: 100%;
-  height: calc(420vh - 60px);
+  height: calc(430vh - 60px);
 }
 
 .container_portada {
-  background: #F7EFE5;
+  background: #f7efe5;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -13,7 +13,7 @@
   align-items: center;
 }
 .container_fortalezas {
-  background: #A61F69;
+  background: #a61f69;
   width: 100%;
   height: 80vh;
   display: flex;
@@ -66,7 +66,7 @@
   align-items: center;
 }
 .container_quien_soy {
-  background: #F7EFE5;
+  background: #f7efe5;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -144,7 +144,7 @@
   animation: like 0.5s 1;
 }
 .container_educacion {
-  background: #A61F69;
+  background: #a61f69;
   width: 100%;
   height: 60vh;
   display: flex;
@@ -210,9 +210,9 @@
 }
 
 .container_proyecto {
-  background: #F7EFE5;
+  background: #f7efe5;
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -258,7 +258,6 @@
   transform: translateY(100%);
   transition: 0.2s ease-in-out;
   box-sizing: border-box;
-  
 }
 .container_4_1:hover {
   transform: translateY(0);
@@ -267,38 +266,38 @@
   transform: translateY(0);
 }
 .card__header {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    padding: 1em;
-    border-radius: 40px 0 0 0;
-    background-color: #34495e;
-    transform: translateY(-100%);
-    transition: 0.2s ease-in-out;
-    box-sizing: border-box;
-    justify-content: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  border-radius: 40px 0 0 0;
+  background-color: #34495e;
+  transform: translateY(-100%);
+  transition: 0.2s ease-in-out;
+  box-sizing: border-box;
+  justify-content: center;
 }
 .container_4_1:hover .card__header {
   transform: translateY(0);
 }
 .titulo_4 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    font-family: Gantari;
-    color: white;
-    font-size: 1.5rem;
-    margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: Gantari;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 2%;
 }
 .url {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Gantari;
-    color: white;
-    font-size: 2rem;
-    margin-bottom: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Gantari;
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 15%;
 }
 .img_3 {
   width: 100%;
@@ -306,6 +305,17 @@
   object-fit: cover;
 }
 .titulo_1 {
+  font-size: 2.5rem;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  margin: 0;
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titulo_1_1 {
   font-size: 2.5rem;
   font-family: Roboto, sans-serif;
   font-weight: 300;
@@ -358,5 +368,169 @@
   }
   100% {
     transform: scale(1.1);
+  }
+}
+@media (max-width: 1281px) {
+  .main {
+    height: calc(475vh - 60px);
+  }
+  .imagen {
+    height: 33rem;
+  }
+  .icon_1 {
+    height: 14rem;
+  }
+  .forta {
+    margin-top: 2%;
+  }
+  .container_educacion {
+    height: 70vh;
+  }
+  .container_proyecto {
+    height: 95vh;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .main {
+    height: calc(520vh - 60px);
+  }
+  .forta {
+    color: #f6ddcc;
+    font-size: 2rem;
+    font-family: Gantari;
+  }
+  .titulo_1_1 {
+    line-height: 1;
+  }
+  .cajon_1 {
+    margin-top: 1%;
+  }
+  .nombre_fortaleza {
+    font-size: 1.25rem;
+  }
+  .descripcion_fortaleza {
+    font-size: 1rem;
+  }
+  .img_forta {
+    height: 8rem;
+  }
+  .antetitulo_quien {
+    height: 6rem;
+  }
+  .bio {
+    width: 80%;
+  }
+  .caja_2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    height: 27rem;
+    margin-top: 1%;
+    justify-content: flex-start;
+    margin-bottom: 4%;
+  }
+  .caja_2_1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -21%;
+  }
+  .titulo_3 {
+    justify-content: flex-start;
+    width: 40%;
+  }
+  .container_quien_soy {
+    height: 189vh;
+  }
+  .container_proyecto {
+    height: 70vh;
+  }
+  .container_4 {
+    height: 8rem;
+  }
+  .img_1 {
+    height: 4rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main {
+    height: calc(656vh - 60px);
+  }
+  .titulo_1 {
+    font-size: 2rem;
+    height: 5.5rem;
+  }
+  .titulo_1_1 {
+    line-height: 1;
+    font-size: 1.6rem;
+  }
+  .titulo_2 {
+    font-size: 3.3rem;
+    font-family: Georgia, serif;
+    margin: 0;
+    width: 100%;
+    height: 57px;
+    display: flex;
+    line-height: 1;
+    align-items: none;
+    justify-content: center;
+  }
+  .container_imgico {
+    width: 100%;
+  }
+  .container_fortalezas {
+    height: 190vh;
+  }
+  .descripcion_fortaleza {
+    margin-top: 0%;
+  }
+  .cajon_1 {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 19rem;
+  }
+  .cajon_1_1 {
+    width: 49%;
+    margin-right: 0%;
+    margin-bottom: 2%;
+  }
+  .caja_2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    height: 27rem;
+    margin-top: 1%;
+    justify-content: flex-start;
+    margin-bottom: 4%;
+  }
+  .caja_2_1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -21%;
+  }
+  .titulo_3 {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .img_1 {
+    height: 4rem;
+  }
+  .container_quien_soy {
+    height: 190vh;
+  }
+  .antetitulo_quien {
+    font-size: 1.3rem;
+    height: 6rem;
+  }
+  .titulo_quien {
+    font-size: 2rem;
+  }
+  .bio {
+    font-size: 1.2rem;
+    line-height: 140%;
+  }
+  .container_proyecto {
+    height: 95vh;
   }
 }

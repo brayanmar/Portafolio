@@ -1,3 +1,27 @@
 <div class="footer">
- 
+ <div *ngFor= "let element of personaje | rray" class="container_foo">
+    <p class="titulo_con">¿Tienes algún Proyecto? Hablemos</p>
+    <div *ngFor= "let elements of element.contacto | rray" class="container_foo_1">
+    <p>Teléfono</p>
+    <p>{{elements.numero}}</p>
+    <p>Deja tu mensaje</p>
+    <p>{{elements.correo}}</p>
+    <div class="ico">
+      <p>Linkedin</p>
+    <a mat-raised-button href={{elements.linke}} > <img src="../../../assets/linke.png" class="img_1"> </a>
+    <p>Git Hub</p>
+    <a mat-raised-button href={{elements.Git}} ><img src="../../../assets/github-removebg-preview.png" class="img_1"></a>
+    <p>Canlendly</p>
+    <a mat-raised-button href={{elements.calen}} ><img src="../../../assets/plazo.png" class="img_1"></a>
+   </div>
+    </div>
+ </div>
+ <div class="container_form">
+   <form class="form">
+      <input type="text" id="name" placeholder="Nombre..." class="input_name">
+      <input type="text" id="correo" placeholder="Correo Electronico..." class="input_name">
+      <textarea type="text" id="descripcion" placeholder="Descripcion..." class="input_name"></textarea>
+      <button>Enviar</button>
+   </form>
+ </div>
 </div>
