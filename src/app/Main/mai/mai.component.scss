@@ -662,10 +662,10 @@
 @media (min-width: 320px) and (max-width: 480px) {
   //CSS
   .main {
-    height: calc(950vh - 60px);
+    height: calc(747vh - 60px);
   }
   .container_portada {
-    height: 190vh;
+    height: 150vh;
     display: flex;
     flex-wrap: wrap;
   }
@@ -685,7 +685,7 @@
     line-height: 115%;
   }
   .container_fortalezas {
-    height: 295vh;
+    height: 240vh;
   }
   .forta {
     margin-top: 4%;
@@ -736,7 +736,7 @@
     height: 4rem;
   }
   .container_quien_soy {
-    height: 200vh;
+    height: 155vh;
   }
   .antetitulo_quien {
     font-size: 1.3rem;
@@ -762,7 +762,7 @@
     width: 80%;
   }
   .container_educacion {
-    height: 130vh;
+    height: 95vh;
   }
   .instituto {
     font-size: 1.2rem;
@@ -780,7 +780,7 @@
     margin-bottom: 8%;
   }
   .container_proyecto {
-    height: 145vh;
+    height: 100vh;
   }
   .titulo_educa {
     font-size: 1.5rem;
