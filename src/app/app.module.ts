@@ -4,10 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NavComponent } from './NavBar/nav/nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 import { FooComponent } from './Footer/foo/foo.component';
 import { MaiComponent } from './Main/mai/mai.component';
-import { ArrayPipe } from './Main/mai/array.pipe'
+import { ArrayPipe } from './Main/mai/array.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,14 +16,16 @@ import { ArrayPipe } from './Main/mai/array.pipe'
     NavComponent,
     FooComponent,
     MaiComponent,
-    ArrayPipe
+    ArrayPipe,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

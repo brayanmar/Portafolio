@@ -26,21 +26,72 @@
     </div>
   </div>
   <div class="container_form">
-    <form class="form">
-      <input type="text" id="name" placeholder="Nombre..." class="input_name" />
+    <form (ngSubmit)="onSubmit()" class="form" [formGroup]="formulario">
+      <input
+        type="text"
+        id="name"
+        placeholder="Nombre..."
+        class="input_name"
+        name="name"
+        formControlName="name"
+        required
+      />
+      <div
+        *ngIf=" formulario.get('name')?.touched && formulario.get('name')?.errors?.['minlength'] "
+      >
+        nombre incompleto
+      </div>
+      <div
+        *ngIf=" formulario.get('name')?.touched && formulario.get('name')?.errors?.['required'] "
+      >
+        nombre incompleto
+      </div>
       <input
         type="text"
         id="correo"
-        placeholder="Correo Electronico..."
+        placeholder="Correo electrónico..."
         class="input_name"
+        name="correo"
+        formControlName="correo"
+        required
       />
+      <div
+        *ngIf=" formulario.get('correo')?.touched && formulario.get('correo')?.errors?.['email'] "
+      >
+        correo incompleto
+      </div>
+      <div
+        *ngIf=" formulario.get('correo')?.touched && formulario.get('correo')?.errors?.['required'] "
+      >
+        uppss! Espacio vacío, digite el correo
+      </div>
       <textarea
         type="text"
         id="descripcion"
-        placeholder="Descripcion..."
+        placeholder="Descripción..."
         class="input_name"
+        name="descripcion"
+        formControlName="descripcion"
+        required
       ></textarea>
-      <button class="button_6">Enviar</button>
+      <div
+        *ngIf=" formulario.get('descripcion')?.touched && formulario.get('descripcion')?.errors?.['minlength'] "
+      >
+        UPS! Se requiere información
+      </div>
+      <div
+        *ngIf=" formulario.get('descripcion')?.touched && formulario.get('descripcion')?.errors?.['required'] "
+      >
+        UPS! Se requiere información
+      </div>
+      <button
+        class="button_6"
+        type="submit"
+        [disabled]="formulario.invalid"
+        (click)="onSubmit()"
+      >
+        Enviar
+      </button>
     </form>
   </div>
 </div>
