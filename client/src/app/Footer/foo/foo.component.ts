@@ -127,7 +127,7 @@ export class FooComponent implements OnInit {
           linke:
             'https://www.linkedin.com/in/brayan-andres-ramirez-martinez-380891263',
           Git: 'https://github.com/brayanmar',
-          numero: '+ 57 318-547-1138',
+          numero: '+ 57 300-761-2392',
           correo: 'brianbrian216@gmail.com',
           calen:
             'https://calendly.com/brayanmar/entrevistas-programador-full-stack-developer',
