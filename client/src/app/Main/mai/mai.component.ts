@@ -102,7 +102,7 @@ export class MaiComponent {
           img: '../../../assets/cloud-database-removebg-preview.png',
         },
       ],
-      bio: ' Es un gusto presentarme frente a ti, si!, si tú!, te agradezco por dedicarle tiempo en mirar mi perfil y así conocerme un poco más ya sé, no te he dicho nada, antes que todo me presento soy Brayan Andrés Ramírez Martínez, Programador full stack developer con conocimientos en ( | JavaScript | React |React Native| Redux |Redux Toolkit | Nextjs | Node | Express | PostgreSQL | Java | HTML | CSS | Git Hub| Mongoose), conocimientos en la  metodología SCRUM',
+      bio: ' Hola, es un gusto presentarme frente a ti soy Programador full stack web developer con conocimientos en DIRECCION DE PROYECTOS (Git Hub) con METODOLOGIAS (SCRUM, UX / UI), LENGUAJES(java, javascript, typescript), FROND-END ( react || react/native || nextjs, redux || redux toolkit, svelte, angular), BACK-END (express), DB ( mongoose, postgresql,mysql ) Con mas de 800+ horas en practicas',
       proyectos: [
         {
           name: 'Little Paws',
