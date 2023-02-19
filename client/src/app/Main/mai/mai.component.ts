@@ -102,7 +102,7 @@ export class MaiComponent {
           img: '../../../assets/cloud-database-removebg-preview.png',
         },
       ],
-      bio: ' Hola, es un gusto presentarme frente a ti soy Programador full stack web developer con conocimientos en DIRECCION DE PROYECTOS (Git Hub) con METODOLOGIAS (SCRUM, UX / UI), LENGUAJES(java, javascript, typescript), FROND-END ( react || react/native || nextjs, redux || redux toolkit, svelte, angular), BACK-END (express), DB ( mongoose, postgresql,mysql ) Con mas de 800+ horas en practicas',
+      bio: ' Hola, es un gusto presentarme frente a ti soy Programador full stack web developer con conocimientos en DIRECCION DE PROYECTOS (Git Hub) con METODOLOGIAS (SCRUM, UX / UI), LENGUAJES(java, javascript, typescript), FROND-END ( react || react/native || nextjs, redux || redux toolkit, svelte, angular), BACK-END (express, Node), DB ( mongoose, postgresql,mysql ) Con mas de 800+ horas en practicas',
       proyectos: [
         {
           name: 'Little Paws',
