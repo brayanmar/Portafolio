@@ -10,6 +10,7 @@ import { MaiComponent } from './Main/mai/mai.component';
 import { ArrayPipe } from './Main/mai/array.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     AppComponent,
