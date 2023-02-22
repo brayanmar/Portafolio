@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
+import axios from 'axios';
 type Persona = Array<{
   name: string;
   img: string;
@@ -137,10 +138,12 @@ export class FooComponent implements OnInit {
   ];
 
   formulario!: FormGroup;
-  onSubmit(): void {
-    console.log(this.formulario.value);
-    this.formulario.reset();
-    Swal.fire('Genial, informacion enviada con exito');
+  async onSubmit  ()  {
+   const a = await axios.post('http://localhost:3005/postUser',this.formulario.value).then(res => res).catch(err => err)
+   this.formulario.reset();
+    return (
+      a.name === "AxiosError" ?  Swal.fire(a.response.data.info): Swal.fire(a.data.info))
+
   }
 
   constructor(private readonly fb: FormBuilder) {}
