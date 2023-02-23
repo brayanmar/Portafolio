@@ -16,7 +16,7 @@ app.use(cors(corsConfig));
 app.use(express.json());
 app.use(morgan("tiny"));
 
-const PORT = 3005;
+const PORT = 'mongodb://mongo:exbGwzp2yRwZUkxqwdHB@containers-us-west-39.railway.app:5622';
 
 app.use("/", rout)
 
