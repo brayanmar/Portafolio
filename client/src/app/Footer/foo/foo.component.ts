@@ -138,12 +138,15 @@ export class FooComponent implements OnInit {
   ];
 
   formulario!: FormGroup;
-  async onSubmit  ()  {
-   const a = await axios.post('/postUser',this.formulario.value).then(res => res).catch(err => err)
-   this.formulario.reset();
-    return (
-      a.name === "AxiosError" ?  Swal.fire(a.response.data.info): Swal.fire(a.data.info))
-
+  async onSubmit() {
+    const a = await axios
+      .post('http://localhost:3001/postUser', this.formulario.value)
+      .then((res) => res)
+      .catch((err) => err);
+    this.formulario.reset();
+    return a.name === 'AxiosError'
+      ? Swal.fire(a.response.data.info)
+      : Swal.fire(a.data.info);
   }
 
   constructor(private readonly fb: FormBuilder) {}
