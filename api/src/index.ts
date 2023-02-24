@@ -27,6 +27,6 @@ const conec = async  () => {
     await mongoose.connect(MONGO_URL,{ useNewUrlParser: true, useUnifiedTopology: true },console.log('se levanto el DB'));
   
 
-   app.listen(PORT || 3001, () => console.log("SERVER OPEN IN PORT"));
+   app.listen(PORT || 3001, () => console.log("SERVER OPEN IN PORT 3001"));
 } 
 conec();
